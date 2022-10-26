@@ -51,18 +51,18 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                 <div class="vh-100 d-flex justify-content-center align-items-center ">
                     <div class="col-md-6 p-5  border rounded-5  signUpBox bg-white">
                         <h2 class="text-center mb-4 text-primary">Sign Up</h2>
-                        <form>
+                        <form action="/signup" method="post">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input type="text" class="form-control border border-primary" id="exampleInputName">
+                                <input name="name" type="text" class="form-control border border-primary" id="exampleInputName">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control border border-primary" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input name="email" type="email" class="form-control border border-primary" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control border border-primary" id="exampleInputPassword1">
+                                <input name="password" type="password" class="form-control border border-primary" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
